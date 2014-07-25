@@ -613,11 +613,14 @@ static int translateKey(unsigned int key)
         _glfwInputScroll(window, deltaX, deltaY);
 }
 
+/*
+//This is broken:https://github.com/openframeworks/openFrameworks/issues/3107
 - (void)resetCursorRects
 {
     [self discardCursorRects];
     [self addCursorRect:[self bounds] cursor:_glfw.ns.cursor];
 }
+*/
 
 @end
 
