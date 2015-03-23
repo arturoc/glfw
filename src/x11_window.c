@@ -946,6 +946,7 @@ static void processEvent(XEvent *event)
         {
             const int key = translateKey(event->xkey.keycode);
             const int mods = translateState(event->xkey.state);
+            const int character = translateChar(&event->xkey);
 
             if (!_glfw.x11.xkb.detectable)
             {
